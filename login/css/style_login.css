@@ -1,0 +1,38 @@
+
+#header {
+    margin: auto;
+    height: 20%;
+    width: 80%;
+}
+.header img{
+        width: 1110px;
+        height: 130px;
+}
+ul {
+    list-style: none;
+    width: 100%;
+    padding-inline-start: 0px;
+    background: #D1CCCC;
+}
+.menubar li {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    margin: 0 0.5px 5px 0.5px;
+    background: white;
+}
+a{
+    color: black;
+}
+form {
+    width: 30%;
+    margin: auto;
+    background: #F7F7F7;
+    padding: 20px 10px;
+}
+.title-login{
+    text-align: center;
+}
+input.btn.btn-primary {
+    width: 100%;
+}

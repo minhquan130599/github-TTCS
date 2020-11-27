@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor Admin quản lý</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_home1.css">
+</head>
+<body>
+    <div class="container-full">
+        <div class="container">
+            <div class="header">
+                <div class="header-top">
+                    <img src="/login/hoc-vien-mat-ma.jpg" alt="">
+                </div>
+                <div class="header-bottom">
+
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="row">
+                    <div class="main-left">
+                        <ul>
+                            <li>
+                                <!-- chỗ này sẽ chèn link trang chủ -->
+                                <i class="fas fa-home"></i> <a href="/home/home.html">Trang chủ</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link quản lý tài khoản -->
+                                <i class="fas fa-user-circle"></i> <a href="/admin quản lí tài khoản/admin_qltk.html">Quản lý tài khoản</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link  -->
+                                <i class="fas fa-file-upload"></i> <a href="#">Upload file</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-bell"></i> <a href="#">Post thông báo</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-sign-out-alt"></i> <a href="/login/login.html">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-right">
+                        <form action="" method="POST">
+                            <!-- Tiêu đề của web là quản lý tài khoản -->
+                            <div class="alert alert-primary" role="alert">
+                                Quản lý tài khoản
+                            </div>
+                            <div class="row">
+                                <!-- class="title-ip" là class tiêu đề của input -->
+                                <!-- class="ip" là class input -->
+                                <!-- id="ip_username là id của input" -->
+                                <div class="title-ip">
+                                    Tên đăng nhập *
+                                </div>
+                                <div class="ip">
+                                    <input type="text" id="ip_username" placeholder="Nhập tên đăng nhập">
+                                </div>
+                            </div>
+
+                            <!-- class="title-ip" là class tiêu đề của input -->
+                                <!-- class="ip" là class input -->
+                                <!-- id="ip_password là id của input" -->
+                            <div class="row">
+                                <div class="title-ip">
+                                    Mật khẩu *
+                                </div>
+                                <div class="ip">
+                                    <input type="text" id="ip_password" placeholder="Nhập mật khẩu">
+                                </div>
+                            </div>
+                            <!-- class="title-ip" là class tiêu đề của input -->
+                                <!-- class="ip" là class input -->
+                                <!-- id="ip_name là id của input" -->
+                            <div class="row">
+                                <div class="title-ip">
+                                    Họ và tên *
+                                </div>
+                                <div class="ip">
+                                    <input type="text" id="ip_name" placeholder="Nhập họ và tên của user">
+                                </div>
+                            </div>
+                            <!-- class="title-ip" là class tiêu đề của input -->
+                                <!-- class="ip" là class input -->
+                                <!-- id="ip_email là id của input" -->
+                            <div class="row">
+                                <div class="title-ip">
+                                    Email *
+                                </div>
+                                <div class="ip">
+                                    <input type="text" id="ip_email" placeholder="Nhập email của user">
+                                </div>
+                            </div>
+                            <!-- class="title-ip" là class tiêu đề của input -->
+                                <!-- class="ip" là class input -->
+                                <!-- id="ip_position là id của input phân quyền chức vụ" -->
+                            <div class="row">
+                                <div class="title-ip">
+                                    Phân quyền *
+                                </div>
+                                <div class="ip">
+                                    <select name="" id="ip_position">
+                                        <option value="1">Admin</option>
+                                        <option value="2">Nhân viên quản lý</option>
+                                        <option value="3">Giảng viên</option>
+                                        <option value="4">Sinh viên</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-secondary">Hủy</button>
+                            <button type="button" class="btn btn-primary">Thêm tài khoản</button>
+                        </form>
+                        <br>
+                        <br>
+                        <div class="main-footer">
+                            <!-- Chỗ này sẽ chèn bảng danh sách tài khoản -->
+                            <!-- cần liên kết cơ sở dữ liệu để xuất ra bảng -->
+                            <h4>Danh sách tài khoản</h4>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                Học viện Kỹ thuật Mật mã
+                <br>
+                Địa chỉ: 141 đường Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội
+                <br>
+                &copy; Copyright 2015 Học viện Kỹ thuật Mật mã
+            </div>
+        </div>
+    </div>
+</body>
+</html>

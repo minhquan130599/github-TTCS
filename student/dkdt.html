@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor Admin quản lý</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_home1.css">
+</head>
+<body>
+    <div class="container-full">
+        <div class="container">
+            <div class="header">
+                <div class="header-top">
+                    <img src="/login/hoc-vien-mat-ma.jpg" alt="">
+                </div>
+                <div class="header-bottom">
+
+                </div>
+            </div>
+            <div class="main">
+                <div class="row">
+                    <div class="main-left">
+                        <ul>
+                            <li>
+                                <!-- chỗ này sẽ chèn link danh sách thông báo -->
+                                <i class="fas fa-home"></i> <a href="/student/thongbao.html">Thông báo</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này chèn link quản lý thông tin cá nhân -->
+                                <i class="fas fa-user-circle"></i> <a href="#">Quản lý thông tin cá nhân</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link đăng ký đề tài -->
+                                <i class="fas fa-file-alt"></i> <a href="/student/dkdt.html">Đăng ký đề tài</a>
+                            </li>
+                            
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-comment-alt"></i> <a href="#">Trạng thái đề tài</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-list-ol"></i> <a href="#">Mã số đề tài</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-calendar-plus"></i> <a href="#">Gia hạn đề tài</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này chèn link -->
+                                <i class="fas fa-window-close"></i> <a href="#">Hủy đề tài</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này chèn link -->
+                                <i class="fas fa-check-square"></i> <a href="#">Nộp báo cáo</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-sign-out-alt"></i> <a href="/login/login.html">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div class="main-right">
+                        <form action="" method="POST">
+                            <div class="alert alert-primary" role="alert">
+                                Đăng Ký Đề Tài
+                            </div>
+
+                            <!-- id tendt là tên đề tài -->
+                            <label for="tendt">Tên đề tài *</label>
+                            <input type="text" id="tendt" placeholder="Nhập tên đề tài" class="form-control">
+
+                            <!-- id tentg là tên tác giả là tên sinh viên của bản nghiên cứu -->
+                            <div class="row">
+                                <label for="tencn">Tên tác giả *</label>
+                                <input type="text" id="tentg" class="form-control" placeholder="Nhập tên tác giả">
+                            </div>
+
+                            <!-- id chuyennganh là chuyên ngành -->
+                            <div class="row">
+                                <label for="chuyennganh">Chuyên ngành</label>
+                                <input type="text" id="chuyennganh" class="form-control" placeholder="Nhập chuyên ngành">
+                            </div>
+
+                            <!-- id email là email -->
+                            <div class="row">
+                                <label for="email">Email *</label>
+                                <input type="text" id="email" placeholder="Nhập email" class="form-control">
+                            </div>
+
+                            <!-- id gv là tên giáo viên hướng dẫn -->
+                            <div class="row">
+                                <label for="gv">Giáo viên hướng dẫn *</label>
+                                <input type="text" id="gv" placeholder="Nhập tên giáo viên hướng dẫn" class="form-control">
+                            </div>
+
+                            <!-- id theo từng giá trị checkbox -->
+                            <!-- value trùng với text hiển thị -->
+                            <div class="row">
+                                <label for="">Lĩnh vực nghiên cứu</label>
+                                <input type="checkbox" id="lv1" value="Nhúng">Nhúng
+                                <input type="checkbox" id="lv2" value="Di động">Di động
+                                <input type="checkbox" id="lv3" value="An toàn thông tin">An toàn thông tin
+                                <input type="checkbox" id="lv4" value="Nghiên cứu">Nghiên cứu
+                            </div>
+
+                            <div class="row">
+                                <label for="upload">Chọn file upload</label>
+                                <input type="file" id="upload">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                Học viện Kỹ thuật Mật mã
+                <br>
+                Địa chỉ: 141 đường Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội
+                <br>
+                &copy; Copyright 2015 Học viện Kỹ thuật Mật mã
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="css/style_login.css">
+</head>
+<body>
+    <div class="container-full">
+        <div class="container">
+            <div class="header">
+                <div class="header-top">
+                    <img src="/login/hoc-vien-mat-ma.jpg" alt="">
+                </div>
+                <div class="menubar">
+                    <ul>
+                        <li>
+                            <a href="#" type="button" class="btn">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn">Tin tức</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main">
+                <form action="" method="POST" id="form">
+                    <h2 class="title-login">Đăng nhập</h2>
+                    <br>
+                    <!-- id để xác định đối tượng -->
+                    <!-- value trùng với text để lấy giá trị lưu vào cơ sở dữ liệu -->
+                    <!-- Các input kiểu radio phải khai báo thuộc tính name giống nhau -->
+                    <input type="radio" name="position" value="Admin" id="admin">Admin
+                    <br>
+                    <input type="radio" name="position" value="Nhân viên quản lý" id="manage">Nhân viên quản lý
+                    <br>
+                    <input type="radio" name="position" value="Giảng viên" id="lecturer">Giảng viên
+                    <br>
+                    <input type="radio" name="position" value="Sinh viên" id="student">Sinh viên
+                    <br>
+
+                    <!-- h3 này là để báo lỗi khi người dùng đăng nhập nhưng chưa chọn chức vụ -->
+                    <h3 id="error" style="color: red;"></h3>
+
+                    <!-- label là text, là tiêu đề cho input -->
+                    <!-- label for id của input -->
+                    <label for="ip_username">Tên đăng nhập:</label>
+                    <br>
+                    <input type="text" id="ip_username" class="form-control">
+                    <br>
+
+                    <!-- h3 để thông báo lỗi -->
+                    <h3 id="error1" style="color: red;"></h3>
+                    
+                    <!-- label là text, là tiêu đề cho input -->
+                    <!-- label for id của input -->
+                    <label for="ip_password">Mật khẩu:</label>
+                    <br>
+                    <input type="password" id="ip_password" class="form-control">
+                    <br>
+
+                    <!-- h3 để thông báo nếu có lỗi -->
+                    <h3 id="error2" style="color: red;"></h3>
+
+                    <input type="submit" class="btn btn-primary" value="Đăng nhập">
+                </form>
+
+
+                <!-- phần javascript này là để xử lí cho việc nhập dữ liệu nếu để trống, 
+                    hoặc chưa chọn chức vụ sẽ báo cho người dùng đăng nhập -->
+                <script type="text/javascript">
+                        var obj_admin = document.getElementById('admin');
+                        var obj_manage = document.getElementById('manage');
+                        var obj_lecturer = document.getElementById('lecturer');
+                        var obj_student = document.getElementById('student');
+                        var result_radio = '';
+                        obj_admin.addEventListener('change', function(){
+                            result_radio = this.value;
+                        })
+
+                        obj_manage.addEventListener('change', function(){
+                            result_radio = this.value;
+                        })
+                        
+                        obj_lecturer.addEventListener('change', function(){
+                            result_radio = this.value;
+                        })
+
+                        obj_student.addEventListener('change', function(){
+                            result_radio = this.value;
+                        })
+
+                    var obj_form = document.getElementById('form');
+                    obj_form.addEventListener('submit', function(){
+                        event.preventDefault();
+                        var error = '';
+                        var error1 = '';
+                        var error2 = '';
+                        
+                        var obj_username = document.getElementById('ip_username');
+                        var username = obj_username.value;
+
+                        var obj_password = document.getElementById('ip_password');
+                        var password = obj_password.value;
+
+                        if (result_radio ==''){
+                            error = 'Phải chọn chức vụ';
+                        } else if (username == ''){
+                            error1 = 'Phải nhập username';
+                            obj_username.focus();
+                        } else if (password == ''){
+                            error2 = 'Phải nhập mật khẩu';
+                            obj_password.focus();
+                        } else {
+                            alert = 'Đăng nhập thành công'
+                        }
+                        document.getElementById('error').innerHTML = error;
+                        document.getElementById('error1').innerHTML = error1;
+                        document.getElementById('error2').innerHTML = error2;
+                    })
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

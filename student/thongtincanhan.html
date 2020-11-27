@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_home1.css">
+</head>
+<body>
+    <div class="container-full">
+        <div class="container">
+            <div class="header">
+                <div class="header-top">
+                    <img src="/login/hoc-vien-mat-ma.jpg" alt="">
+                </div>
+                <div class="header-bottom">
+
+                </div>
+            </div>
+            <div class="main">
+                <div class="row">
+                    <div class="main-left">
+                        <ul>
+                            <li>
+                                <!-- chỗ này sẽ chèn link danh sách thông báo -->
+                                <i class="fas fa-home"></i> <a href="/student/thongbao.html">Thông báo</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này chèn link quản lý thông tin cá nhân -->
+                                <i class="fas fa-user-circle"></i> <a href="/student/thongtincanhan.html">Quản lý thông tin cá nhân</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link đăng ký đề tài -->
+                                <i class="fas fa-file-alt"></i> <a href="/student/dkdt.html">Đăng ký đề tài</a>
+                            </li>
+                            
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-comment-alt"></i> <a href="#">Trạng thái đề tài</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-list-ol"></i> <a href="#">Mã số đề tài</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-calendar-plus"></i> <a href="#">Gia hạn đề tài</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này chèn link -->
+                                <i class="fas fa-window-close"></i> <a href="#">Hủy đề tài</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này chèn link -->
+                                <i class="fas fa-check-square"></i> <a href="#">Nộp báo cáo</a>
+                            </li>
+                            <li>
+                                <!-- Chỗ này sẽ chèn link -->
+                                <i class="fas fa-sign-out-alt"></i> <a href="/login/login.html">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-right">
+                        <div class="alert alert-primary" role="alert">
+                            <b>Thông tin cá nhân</b>
+                        </div>
+                        <div class="thongtin">
+                            <form action="" method="GET">
+                                <div class="row">
+                                    <!-- Đây là cột thứ nhất của main-right -->
+                                    <div class="thongtin-left">
+                                        <div class="row">
+                                            <!-- input Họ tên có id hoten -->
+                                            <label for="hoten">Họ và Tên</label>
+                                            <div id="hoten"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input email có id email -->
+                                            <label for="email">Email</label>
+                                            <div id="email"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input khoa có id khoa -->
+                                            <label for="khoa">Khoa</label>
+                                            <div id="khoa"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input ngành có id nganh -->
+                                            <label for="nganh">Ngành</label>
+                                            <div id="nganh"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input ngày sinh có id ngays -->
+                                            <label for="ngays">Ngày sinh</label>
+                                            <div id="ngays"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input CMND có id cmnd -->
+                                            <label for="cmnd">CMND/CCCD</label>
+                                            <div id="cmnd"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input tài khoản ngân hàng có id tk -->
+                                            <label for="tk">Tài khoản ngân hàng</label>
+                                            <div id="tk"></div>
+                                        </div>
+                                    </div>
+                                    <div class="thongtin-right">
+                                        <div class="row">
+                                            <!-- input có id msv -->
+                                            <label for="msv">Mã sinh viên</label>
+                                            <div id="msv"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input có id sdt -->
+                                            <label for="sdt">Số điện thoại</label>
+                                            <div id="sdt"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input có id là lop -->
+                                            <label for="lop">Lớp</label>
+                                            <div id="lop"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input có id là nienk -->
+                                            <label for="nienk">Niên khóa</label>
+                                            <div id="nienk"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input có id là gioit -->
+                                            <label for="gioit">Giới tính</label>
+                                            <div id="gioit"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input có id là diachi -->
+                                            <label for="diachi">Địa chỉ</label>
+                                            <div id="diachi"></div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- input có id là chinhanh -->
+                                            <label for="chinhanh">Chi nhánh</label>
+                                            <div id="chinhanh"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="reset" class="btn btn-secondary" id="cancel">Hủy</button>
+                                <button type="submit" class="btn btn-primary" id="submit"><a href="/student/capnhatthongtincanhan.html">Cập nhật thông tin cá nhân</a></button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                Học viện Kỹ thuật Mật mã
+                <br>
+                Địa chỉ: 141 đường Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội
+                <br>
+                &copy; Copyright 2015 Học viện Kỹ thuật Mật mã
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+    </script>
+</body>
+</html>
